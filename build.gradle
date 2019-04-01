@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+version  '1.2.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.sentry:sentry:1.7.16'
+    implementation 'org.slf4j:slf4j-jdk14:1.7.24'
+}
+
+application {
+    mainClassName = 'org.ryan.sentry.Main'
+}
