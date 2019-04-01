@@ -14,7 +14,7 @@ public class Main implements Thread.UncaughtExceptionHandler {
         Sentry.init();
         System.err.println("Finished init, about to log to sentry...");
         Sentry.init();
-        for (int i = 0; i < 10; i += 1) {
+        for (int i = 0; i < 5; i += 1) {
             final int index = i;
             new Thread(() -> doThings("user1", index)).start();
             new Thread(() -> doThings("user2", index)).start();
